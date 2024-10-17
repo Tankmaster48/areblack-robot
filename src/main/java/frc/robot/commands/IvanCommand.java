@@ -25,10 +25,10 @@ public class IvanCommand extends Command {
 
     @Override
     public void execute() {
-        if (timer.hasElapsed(3)) this.driveTrain.drive(0, -0.5, 0, false);
-        else if (timer.hasElapsed(2)) this.driveTrain.drive(-0.5, 0, 0, false);
-        else if (timer.hasElapsed(1)) this.driveTrain.drive(0, 0.5, 0, false);
-        else this.driveTrain.drive(0.5, 0, 0, false);
+        if (timer.hasElapsed(3)) this.driveTrain.drive(0, -0.2, 0, false);
+        else if (timer.hasElapsed(2)) this.driveTrain.drive(-0.2, 0, 0, false);
+        else if (timer.hasElapsed(1)) this.driveTrain.drive(0, 0.2, 0, false);
+        else this.driveTrain.drive(0.2, 0, 0, false);
     }
 
     // Called once the command ends or is interrupted.
